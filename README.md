@@ -1,18 +1,37 @@
 ﻿# Clinic Appointment
 
-Website klinik - jadwal dokter dan janji temu online untuk pasien.
+<p align="center">
+  Website klinik - jadwal dokter dan janji temu online untuk pasien.
+</p>
 
-![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Repo](https://img.shields.io/badge/Status-Aktif-blue)
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.x-%23777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bootstrap-5-%237952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge"/>
+</p>
 
-## Screenshot
 
-![Home](assets/screenshots/home.png)
+
+## Highlight
+
+- **Front-end first** - repository berisi tampilan depan (public UI) yang siap jalan
+- **Ringan & cepat** - tanpa framework berat, load cepat
+- **Mudah di-deploy** - cukup PHP + database, tanpa setup rumit
+- **Keamanan dasar terpasang** - prepared statements, sanitization, password hashing
+
+## Fitur Utama
+
+- Profil klinik & layanan
+- Jadwal dokter
+- Janji temu online
+- Info kesehatan
+- Responsive design
 
 ## Teknologi
+
+<details>
+<summary><b>Lihat detail teknologi</b></summary>
 
 **Backend**
 - PHP 8.x - server-side scripting
@@ -31,15 +50,18 @@ Website klinik - jadwal dokter dan janji temu online untuk pasien.
 **Tooling & DevOps**
 - Git & GitHub
 - Laragon/WAMP
+</details>
 
-## Arsitektur
+## Struktur Proyek
 
-- **Front-end first** - hanya berisi tampilan depan (public UI)
-- Layout modular (folder includes, assets, data)
-- Keamanan: input sanitization, validation, dan prepared query
-- Data berbasis file (JSON) - mudah di-deploy tanpa database server
+```
+portofolio-klinik-web
+  includes/    # Komponen yang di-include (header, footer, dll)
+  assets/      # CSS, JS, gambar
+  *.php        # Halaman tampilan depan
+```
 
-## Quick Start
+## Menjalankan
 
 Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.org)
 
@@ -52,20 +74,10 @@ Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.or
 2. Letakkan folder di `laragon/www/` atau `htdocs/`.
 3. Buka `http://localhost/portofolio-klinik-web`.
 
-## Struktur Proyek
-
-```
-portofolio-klinik-web/
-  assets/      # CSS, JS, gambar, screenshot
-  includes/    # Komponen header, footer, dll
-  data/        # File data (JSON)
-  *.php        # Halaman tampilan depan
-```
-
 ## Kontribusi
 
-Kontribusi sangat diterima! Baca [CONTRIBUTING](CONTRIBUTING.md) dan buka [Issues](https://github.com/Celieln/portofolio-klinik-web/issues).
+Kontribusi sangat diterima! Baca [CONTRIBUTING](CONTRIBUTING.md) dahulu, lalu buat Pull Request atau buka [Issues](https://github.com/Celieln/portofolio-klinik-web/issues) untuk melaporkan bug / request fitur.
 
 ## Lisensi
 
-[MIT](LICENSE) (c) [Celieln](https://github.com/Celieln)
+Distributed under the [MIT](LICENSE) License. (c) [Celieln](https://github.com/Celieln)
