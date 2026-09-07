@@ -8,50 +8,63 @@ Website klinik - jadwal dokter dan janji temu online untuk pasien.
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![Repo](https://img.shields.io/badge/Status-Aktif-blue)
 
+## Screenshot
 
-## Fitur
-
-- Halaman beranda klinik
-- Halaman dokter (dokter.php)
-- Janji temu online (janji.php)
-- Info layanan kesehatan
-- Responsive design
+![Home](assets/screenshots/home.png)
 
 ## Teknologi
 
-- **PHP** - Bahasa pemrograman server-side
-- **MySQL / JSON** - Penyimpanan data
-- **Bootstrap 5** - Styling & responsive
-- **HTML5 + CSS3 + JavaScript** - Front-end
+**Backend**
+- PHP 8.x - server-side scripting
+- Appointment module (dokter, janji)
+- API endpoint untuk data dokter & jadwal
+- JSON-file based data storage
+
+**Frontend**
+- HTML5, CSS3, JavaScript (ES6+)
+- Bootstrap 5 responsive
+- Fetch API untuk data dinamis
+
+**Database**
+- JSON file storage - portable
+
+**Tooling & DevOps**
+- Git & GitHub
+- Laragon/WAMP
+
+## Arsitektur
+
+- **Front-end first** - hanya berisi tampilan depan (public UI)
+- Layout modular (folder includes, assets, data)
+- Keamanan: input sanitization, validation, dan prepared query
+- Data berbasis file (JSON) - mudah di-deploy tanpa database server
 
 ## Quick Start
 
 Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.org)
 
-1. Clone repository ke folder laragon/www/ atau htdocs/:
+1. Clone repository:
 
-   `ash
+   ```bash
    git clone https://github.com/Celieln/portofolio-klinik-web.git
-   `
+   ```
 
-2. Jalankan server Apache. Buka http://localhost/portofolio-klinik-web.
-
-3. Selesai! Website siap digunakan.
+2. Letakkan folder di `laragon/www/` atau `htdocs/`.
+3. Buka `http://localhost/portofolio-klinik-web`.
 
 ## Struktur Proyek
 
-`
-klinik-web/
-  assets/          # CSS, JS, gambar, screenshot
-  includes/        # Komponen yang di-include (header, footer, dll)
-  data/            # File data (JSON)
-  index.php        # Halaman utama
-  *.php            # Halaman lainnya
-`
+```
+portofolio-klinik-web/
+  assets/      # CSS, JS, gambar, screenshot
+  includes/    # Komponen header, footer, dll
+  data/        # File data (JSON)
+  *.php        # Halaman tampilan depan
+```
 
 ## Kontribusi
 
-Kontribusi sangat diterima! Silakan baca [CONTRIBUTING](CONTRIBUTING.md) untuk panduan, atau buka [Issues](https://github.com/Celieln/portofolio-klinik-web/issues) untuk melaporkan bug / request fitur.
+Kontribusi sangat diterima! Baca [CONTRIBUTING](CONTRIBUTING.md) dan buka [Issues](https://github.com/Celieln/portofolio-klinik-web/issues).
 
 ## Lisensi
 
